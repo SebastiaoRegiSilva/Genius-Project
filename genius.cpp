@@ -46,7 +46,7 @@ void loop()
                 if (x1 == 1 || x2 == 1 || x3 == 1)
                 {
                     estado = 1;
-                    delay(100); 
+                    delay(400); 
                     break;
                 }
             }
@@ -62,7 +62,6 @@ void loop()
             digitalWrite(pin4, LOW);
             digitalWrite(pin3, LOW);
 
-            erro = 0;
             while (1)
             {
                 x1 = digitalRead(pin13); // Verde.
@@ -84,7 +83,7 @@ void loop()
             else
             {
                 estado = 2;
-                delay(100); 
+                delay(400); 
             }
             
         break;
@@ -109,7 +108,7 @@ void loop()
 
             // Criei uma variável pra armazenar qual ponto da sequência de botões o jogador está.
             sequencia = 0; 
-            erro = 0;
+            
             // Variável pra avaliar se devo encerrar o loop de verificação dos botões.
             fim = 0;
             
@@ -131,7 +130,10 @@ void loop()
                     case 0: 
                         // Verifica se o botão vermelho foi pressionado.
                         if (x3 == 1)
+                        {
                             sequencia = 1; 
+                            delay(400);
+                        }
                         else if (x2 == 1 || x1 == 1)
                         {
                             // Errei o botão, seto a flag de erro e fim para sair do while.
@@ -145,7 +147,7 @@ void loop()
                         if (x1 == 1)
                             fim = 1; 
                         // Errei o botão, seto a flag de erro e fim para sair do while.
-                        else if (x1 == 1 || x2 == 1)
+                        else if (x3 == 1 || x2 == 1)
                         {
                             erro = 1;
                             fim = 1; 
@@ -160,7 +162,7 @@ void loop()
             else
             {
                 estado = 3;
-                delay(100); 
+                delay(400); 
             }
 
         break;
@@ -193,8 +195,6 @@ void loop()
 
             // Criei uma variável pra armazenar qual ponto da sequência de botões o jogador está.
             sequencia = 0; 
-            erro = 0;
-            // Variável pra avaliar se devo encerrar o loop de verificação dos botões.
             fim = 0;
             
             // Loop infinito.
@@ -215,7 +215,10 @@ void loop()
                     case 0: 
                         // Verifica se o botão vermelho foi pressionado.
                         if (x3 == 1)
+                        {
                             sequencia = 1; 
+                            delay(400);
+                        }
                         else if (x2 == 1 || x1 == 1)
                         {
                             // Errei o botão, seto a flag de erro e fim para sair do while.
@@ -227,9 +230,12 @@ void loop()
                     case 1:
                         // Verifica se o botão verde foi pressionado.
                         if (x1 == 1)
-                            fim = 1; 
+                        {
+                            sequencia = 2; 
+                            delay(400);
+                        }
                         // Errei o botão, seto a flag de erro e fim para sair do while.
-                        else if (x1 == 1 || x2 == 1)
+                        else if (x3 == 1 || x2 == 1)
                         {
                             erro = 1;
                             fim = 1; 
@@ -256,7 +262,7 @@ void loop()
             else
             {
                 estado = 4;
-                delay(100); 
+                delay(400); 
             }
 
         break;
@@ -297,7 +303,7 @@ void loop()
 
             // Criei uma variável pra armazenar qual ponto da sequência de botões o jogador está.
             sequencia = 0; 
-            erro = 0;
+            
             // Variável pra avaliar se devo encerrar o loop de verificação dos botões.
             fim = 0;
             
@@ -319,7 +325,10 @@ void loop()
                     case 0: 
                         // Verifica se o botão vermelho foi pressionado.
                         if (x3 == 1)
+                        {
                             sequencia = 1; 
+                            delay(400);
+                        }
                         else if (x2 == 1 || x1 == 1)
                         {
                             // Errei o botão, seto a flag de erro e fim para sair do while.
@@ -331,9 +340,12 @@ void loop()
                     case 1:
                         // Verifica se o botão verde foi pressionado.
                         if (x1 == 1)
-                            fim = 1; 
+                        {
+                            sequencia = 2; 
+                            delay(400);
+                        }
                         // Errei o botão, seto a flag de erro e fim para sair do while.
-                        else if (x1 == 1 || x2 == 1)
+                        else if (x3 == 1 || x2 == 1)
                         {
                             erro = 1;
                             fim = 1; 
@@ -343,7 +355,10 @@ void loop()
                     case 2:
                         // Verifica se o botão amarelo foi pressionado.
                         if (x2 == 1)
-                            fim = 1; 
+                        {
+                            sequencia = 3; 
+                            delay(400);
+                        }
                         // Errei o botão, seto a flag de erro e fim para sair do while.
                         else if (x1 == 1 || x3 == 1)
                         {
@@ -355,7 +370,7 @@ void loop()
                     case 3: 
                         // Verifica se o botão vermelho foi pressionado.
                         if (x3 == 1)
-                            sequencia = 1; 
+                            fim = 1; 
                         else if (x2 == 1 || x1 == 1)
                         {
                             // Errei o botão, seto a flag de erro e fim para sair do while.
@@ -372,7 +387,7 @@ void loop()
             else
             {
                 estado = 5;
-                delay(100); 
+                delay(400); 
             }
         break;
 
@@ -420,7 +435,7 @@ void loop()
 
             // Criei uma variável pra armazenar qual ponto da sequência de botões o jogador está.
             sequencia = 0; 
-            erro = 0;
+            
             // Variável pra avaliar se devo encerrar o loop de verificação dos botões.
             fim = 0;
             
@@ -442,7 +457,10 @@ void loop()
                     case 0: 
                         // Verifica se o botão vermelho foi pressionado.
                         if (x3 == 1)
+                        {
                             sequencia = 1; 
+                            delay(400);
+                        }
                         else if (x2 == 1 || x1 == 1)
                         {
                             // Errei o botão, seto a flag de erro e fim para sair do while.
@@ -454,9 +472,12 @@ void loop()
                     case 1:
                         // Verifica se o botão verde foi pressionado.
                         if (x1 == 1)
-                            fim = 1; 
+                        {
+                            sequencia = 2; 
+                            delay(400);
+                        }
                         // Errei o botão, seto a flag de erro e fim para sair do while.
-                        else if (x1 == 1 || x2 == 1)
+                        else if (x3 == 1 || x2 == 1)
                         {
                             erro = 1;
                             fim = 1; 
@@ -466,7 +487,10 @@ void loop()
                     case 2:
                         // Verifica se o botão amarelo foi pressionado.
                         if (x2 == 1)
-                            fim = 1; 
+                        {
+                            sequencia = 3; 
+                            delay(400);
+                        }
                         // Errei o botão, seto a flag de erro e fim para sair do while.
                         else if (x1 == 1 || x3 == 1)
                         {
@@ -478,7 +502,10 @@ void loop()
                     case 3: 
                         // Verifica se o botão vermelho foi pressionado.
                         if (x3 == 1)
-                            sequencia = 1; 
+                        {
+                            sequencia = 4; 
+                            delay(400);
+                        } 
                         else if (x2 == 1 || x1 == 1)
                         {
                             // Errei o botão, seto a flag de erro e fim para sair do while.
@@ -492,7 +519,7 @@ void loop()
                         if (x1 == 1)
                             fim = 1; 
                         // Errei o botão, seto a flag de erro e fim para sair do while.
-                        else if (x1 == 1 || x2 == 1)
+                        else if (x3 == 1 || x2 == 1)
                         {
                             erro = 1;
                             fim = 1; 
@@ -507,7 +534,7 @@ void loop()
             else
             {
                 estado = 6;
-                delay(100); 
+                delay(400); 
             }
         break;
 
@@ -563,7 +590,7 @@ void loop()
 
             // Criei uma variável pra armazenar qual ponto da sequência de botões o jogador está.
             sequencia = 0; 
-            erro = 0;
+            
             // Variável pra avaliar se devo encerrar o loop de verificação dos botões.
             fim = 0;
             
@@ -585,7 +612,10 @@ void loop()
                     case 0: 
                         // Verifica se o botão vermelho foi pressionado.
                         if (x3 == 1)
+                        {
                             sequencia = 1; 
+                            delay(400);
+                        } 
                         else if (x2 == 1 || x1 == 1)
                         {
                             // Errei o botão, seto a flag de erro e fim para sair do while.
@@ -597,9 +627,12 @@ void loop()
                     case 1:
                         // Verifica se o botão verde foi pressionado.
                         if (x1 == 1)
-                            fim = 1; 
+                        {
+                            sequencia = 2; 
+                            delay(400);
+                        } 
                         // Errei o botão, seto a flag de erro e fim para sair do while.
-                        else if (x1 == 1 || x2 == 1)
+                        else if (x3 == 1 || x2 == 1)
                         {
                             erro = 1;
                             fim = 1; 
@@ -609,7 +642,10 @@ void loop()
                     case 2:
                         // Verifica se o botão amarelo foi pressionado.
                         if (x2 == 1)
-                            fim = 1; 
+                        {
+                            sequencia = 3; 
+                            delay(400);
+                        } 
                         // Errei o botão, seto a flag de erro e fim para sair do while.
                         else if (x1 == 1 || x3 == 1)
                         {
@@ -621,7 +657,10 @@ void loop()
                     case 3: 
                         // Verifica se o botão vermelho foi pressionado.
                         if (x3 == 1)
-                            sequencia = 1; 
+                        {
+                            sequencia = 4; 
+                            delay(400);
+                        } 
                         else if (x2 == 1 || x1 == 1)
                         {
                             // Errei o botão, seto a flag de erro e fim para sair do while.
@@ -633,9 +672,12 @@ void loop()
                     case 4:
                         // Verifica se o botão verde foi pressionado.
                         if (x1 == 1)
-                            fim = 1; 
+                        {
+                            sequencia = 5; 
+                            delay(400);
+                        } 
                         // Errei o botão, seto a flag de erro e fim para sair do while.
-                        else if (x1 == 1 || x2 == 1)
+                        else if (x3 == 1 || x2 == 1)
                         {
                             erro = 1;
                             fim = 1; 
@@ -662,7 +704,7 @@ void loop()
             else
             {
                 estado = 7;
-                delay(100); 
+                delay(400); 
             }
         break;
 
@@ -726,7 +768,7 @@ void loop()
 
             // Criei uma variável pra armazenar qual ponto da sequência de botões o jogador está.
             sequencia = 0; 
-            erro = 0;
+            
             // Variável pra avaliar se devo encerrar o loop de verificação dos botões.
             fim = 0;
             
@@ -748,7 +790,10 @@ void loop()
                     case 0: 
                         // Verifica se o botão vermelho foi pressionado.
                         if (x3 == 1)
+                        {
                             sequencia = 1; 
+                            delay(400);
+                        } 
                         else if (x2 == 1 || x1 == 1)
                         {
                             // Errei o botão, seto a flag de erro e fim para sair do while.
@@ -760,9 +805,12 @@ void loop()
                     case 1:
                         // Verifica se o botão verde foi pressionado.
                         if (x1 == 1)
-                            fim = 1; 
+                        {
+                            sequencia = 2; 
+                            delay(400);
+                        } 
                         // Errei o botão, seto a flag de erro e fim para sair do while.
-                        else if (x1 == 1 || x2 == 1)
+                        else if (x3 == 1 || x2 == 1)
                         {
                             erro = 1;
                             fim = 1; 
@@ -772,7 +820,10 @@ void loop()
                     case 2:
                         // Verifica se o botão amarelo foi pressionado.
                         if (x2 == 1)
-                            fim = 1; 
+                        {
+                            sequencia = 3; 
+                            delay(400);
+                        } 
                         // Errei o botão, seto a flag de erro e fim para sair do while.
                         else if (x1 == 1 || x3 == 1)
                         {
@@ -784,7 +835,10 @@ void loop()
                     case 3: 
                         // Verifica se o botão vermelho foi pressionado.
                         if (x3 == 1)
-                            sequencia = 1; 
+                        {
+                            sequencia = 4; 
+                            delay(400);
+                        } 
                         else if (x2 == 1 || x1 == 1)
                         {
                             // Errei o botão, seto a flag de erro e fim para sair do while.
@@ -796,9 +850,12 @@ void loop()
                     case 4:
                         // Verifica se o botão verde foi pressionado.
                         if (x1 == 1)
-                            fim = 1; 
+                        {
+                            sequencia = 5; 
+                            delay(400);
+                        } 
                         // Errei o botão, seto a flag de erro e fim para sair do while.
-                        else if (x1 == 1 || x2 == 1)
+                        else if (x3 == 1 || x2 == 1)
                         {
                             erro = 1;
                             fim = 1; 
@@ -808,7 +865,10 @@ void loop()
                     case 5:
                         // Verifica se o botão amarelo foi pressionado.
                         if (x2 == 1)
-                            fim = 1; 
+                        {
+                            sequencia = 6; 
+                            delay(400);
+                        } 
                         // Errei o botão, seto a flag de erro e fim para sair do while.
                         else if (x1 == 1 || x3 == 1)
                         {
@@ -820,7 +880,7 @@ void loop()
                     case 6: 
                         // Verifica se o botão vermelho foi pressionado.
                         if (x3 == 1)
-                            sequencia = 1; 
+                            fim = 1; 
                         else if (x2 == 1 || x1 == 1)
                         {
                             // Errei o botão, seto a flag de erro e fim para sair do while.
@@ -837,7 +897,7 @@ void loop()
             else
             {
                 estado = 8;
-                delay(100); 
+                delay(400); 
             }
         break;
 
@@ -909,7 +969,7 @@ void loop()
 
             // Criei uma variável pra armazenar qual ponto da sequência de botões o jogador está.
             sequencia = 0; 
-            erro = 0;
+            
             // Variável pra avaliar se devo encerrar o loop de verificação dos botões.
             fim = 0;
             
@@ -931,7 +991,10 @@ void loop()
                     case 0: 
                         // Verifica se o botão vermelho foi pressionado.
                         if (x3 == 1)
+                        {
                             sequencia = 1; 
+                            delay(400);
+                        }
                         else if (x2 == 1 || x1 == 1)
                         {
                             // Errei o botão, seto a flag de erro e fim para sair do while.
@@ -943,9 +1006,12 @@ void loop()
                     case 1:
                         // Verifica se o botão verde foi pressionado.
                         if (x1 == 1)
-                            fim = 1; 
+                        {
+                            sequencia = 2; 
+                            delay(400);
+                        }
                         // Errei o botão, seto a flag de erro e fim para sair do while.
-                        else if (x1 == 1 || x2 == 1)
+                        else if (x3 == 1 || x2 == 1)
                         {
                             erro = 1;
                             fim = 1; 
@@ -955,7 +1021,10 @@ void loop()
                     case 2:
                         // Verifica se o botão amarelo foi pressionado.
                         if (x2 == 1)
-                            fim = 1; 
+                        {
+                            sequencia = 3; 
+                            delay(400);
+                        } 
                         // Errei o botão, seto a flag de erro e fim para sair do while.
                         else if (x1 == 1 || x3 == 1)
                         {
@@ -967,7 +1036,10 @@ void loop()
                     case 3: 
                         // Verifica se o botão vermelho foi pressionado.
                         if (x3 == 1)
-                            sequencia = 1; 
+                        {
+                            sequencia = 4; 
+                            delay(400);
+                        } 
                         else if (x2 == 1 || x1 == 1)
                         {
                             // Errei o botão, seto a flag de erro e fim para sair do while.
@@ -979,9 +1051,12 @@ void loop()
                     case 4:
                         // Verifica se o botão verde foi pressionado.
                         if (x1 == 1)
-                            fim = 1; 
+                        {
+                            sequencia = 5; 
+                            delay(400);
+                        }
                         // Errei o botão, seto a flag de erro e fim para sair do while.
-                        else if (x1 == 1 || x2 == 1)
+                        else if (x3 == 1 || x2 == 1)
                         {
                             erro = 1;
                             fim = 1; 
@@ -991,7 +1066,10 @@ void loop()
                     case 5:
                         // Verifica se o botão amarelo foi pressionado.
                         if (x2 == 1)
-                            fim = 1; 
+                        {
+                            sequencia = 6; 
+                            delay(400);
+                        } 
                         // Errei o botão, seto a flag de erro e fim para sair do while.
                         else if (x1 == 1 || x3 == 1)
                         {
@@ -1003,7 +1081,10 @@ void loop()
                     case 6: 
                         // Verifica se o botão vermelho foi pressionado.
                         if (x3 == 1)
-                            sequencia = 1; 
+                        {
+                            sequencia = 7; 
+                            delay(400);
+                        } 
                         else if (x2 == 1 || x1 == 1)
                         {
                             // Errei o botão, seto a flag de erro e fim para sair do while.
@@ -1017,7 +1098,7 @@ void loop()
                         if (x1 == 1)
                             fim = 1; 
                         // Errei o botão, seto a flag de erro e fim para sair do while.
-                        else if (x1 == 1 || x2 == 1)
+                        else if (x3 == 1 || x2 == 1)
                         {
                             erro = 1;
                             fim = 1; 
@@ -1032,7 +1113,7 @@ void loop()
             else
             {
                 estado = 9;
-                delay(100); 
+                delay(400); 
             }
         break;
 
@@ -1112,7 +1193,7 @@ void loop()
 
             // Criei uma variável pra armazenar qual ponto da sequência de botões o jogador está.
             sequencia = 0; 
-            erro = 0;
+            
             // Variável pra avaliar se devo encerrar o loop de verificação dos botões.
             fim = 0;
             
@@ -1134,7 +1215,10 @@ void loop()
                     case 0: 
                         // Verifica se o botão vermelho foi pressionado.
                         if (x3 == 1)
+                        {
                             sequencia = 1; 
+                            delay(400);
+                        } 
                         else if (x2 == 1 || x1 == 1)
                         {
                             // Errei o botão, seto a flag de erro e fim para sair do while.
@@ -1146,9 +1230,12 @@ void loop()
                     case 1:
                         // Verifica se o botão verde foi pressionado.
                         if (x1 == 1)
-                            fim = 1; 
+                        {
+                            sequencia = 2; 
+                            delay(400);
+                        }
                         // Errei o botão, seto a flag de erro e fim para sair do while.
-                        else if (x1 == 1 || x2 == 1)
+                        else if (x3 == 1 || x2 == 1)
                         {
                             erro = 1;
                             fim = 1; 
@@ -1158,7 +1245,10 @@ void loop()
                     case 2:
                         // Verifica se o botão amarelo foi pressionado.
                         if (x2 == 1)
-                            fim = 1; 
+                        {
+                            sequencia = 3; 
+                            delay(400);
+                        } 
                         // Errei o botão, seto a flag de erro e fim para sair do while.
                         else if (x1 == 1 || x3 == 1)
                         {
@@ -1170,7 +1260,10 @@ void loop()
                     case 3: 
                         // Verifica se o botão vermelho foi pressionado.
                         if (x3 == 1)
-                            sequencia = 1; 
+                        {
+                            sequencia = 4; 
+                            delay(400);
+                        } 
                         else if (x2 == 1 || x1 == 1)
                         {
                             // Errei o botão, seto a flag de erro e fim para sair do while.
@@ -1182,9 +1275,12 @@ void loop()
                     case 4:
                         // Verifica se o botão verde foi pressionado.
                         if (x1 == 1)
-                            fim = 1; 
+                        {
+                            sequencia = 5; 
+                            delay(400);
+                        } 
                         // Errei o botão, seto a flag de erro e fim para sair do while.
-                        else if (x1 == 1 || x2 == 1)
+                        else if (x3 == 1 || x2 == 1)
                         {
                             erro = 1;
                             fim = 1; 
@@ -1194,7 +1290,10 @@ void loop()
                     case 5:
                         // Verifica se o botão amarelo foi pressionado.
                         if (x2 == 1)
-                            fim = 1; 
+                        {
+                            sequencia = 6; 
+                            delay(400);
+                        } 
                         // Errei o botão, seto a flag de erro e fim para sair do while.
                         else if (x1 == 1 || x3 == 1)
                         {
@@ -1206,7 +1305,10 @@ void loop()
                     case 6: 
                         // Verifica se o botão vermelho foi pressionado.
                         if (x3 == 1)
-                            sequencia = 1; 
+                        {
+                            sequencia = 7; 
+                            delay(400);
+                        } 
                         else if (x2 == 1 || x1 == 1)
                         {
                             // Errei o botão, seto a flag de erro e fim para sair do while.
@@ -1218,9 +1320,12 @@ void loop()
                     case 7:
                         // Verifica se o botão verde foi pressionado.
                         if (x1 == 1)
-                            fim = 1; 
+                        {
+                            sequencia = 8; 
+                            delay(400);
+                        } 
                         // Errei o botão, seto a flag de erro e fim para sair do while.
-                        else if (x1 == 1 || x2 == 1)
+                        else if (x3 == 1 || x2 == 1)
                         {
                             erro = 1;
                             fim = 1; 
@@ -1247,7 +1352,7 @@ void loop()
             else
             {
                 estado = 10;
-                delay(100); 
+                delay(400); 
             }
         break;
 
@@ -1335,7 +1440,7 @@ void loop()
 
             // Criei uma variável pra armazenar qual ponto da sequência de botões o jogador está.
             sequencia = 0; 
-            erro = 0;
+            
             // Variável pra avaliar se devo encerrar o loop de verificação dos botões.
             fim = 0;
             
@@ -1357,7 +1462,10 @@ void loop()
                     case 0: 
                         // Verifica se o botão vermelho foi pressionado.
                         if (x3 == 1)
+                        {
                             sequencia = 1; 
+                            delay(400);
+                        } 
                         else if (x2 == 1 || x1 == 1)
                         {
                             // Errei o botão, seto a flag de erro e fim para sair do while.
@@ -1369,9 +1477,12 @@ void loop()
                     case 1:
                         // Verifica se o botão verde foi pressionado.
                         if (x1 == 1)
-                            fim = 1; 
+                        {
+                            sequencia = 2; 
+                            delay(400);
+                        } 
                         // Errei o botão, seto a flag de erro e fim para sair do while.
-                        else if (x1 == 1 || x2 == 1)
+                        else if (x3 == 1 || x2 == 1)
                         {
                             erro = 1;
                             fim = 1; 
@@ -1381,7 +1492,10 @@ void loop()
                     case 2:
                         // Verifica se o botão amarelo foi pressionado.
                         if (x2 == 1)
-                            fim = 1; 
+                        {
+                            sequencia = 3; 
+                            delay(400);
+                        }
                         // Errei o botão, seto a flag de erro e fim para sair do while.
                         else if (x1 == 1 || x3 == 1)
                         {
@@ -1393,7 +1507,10 @@ void loop()
                     case 3: 
                         // Verifica se o botão vermelho foi pressionado.
                         if (x3 == 1)
-                            sequencia = 1; 
+                        {
+                            sequencia = 4; 
+                            delay(400);
+                        } 
                         else if (x2 == 1 || x1 == 1)
                         {
                             // Errei o botão, seto a flag de erro e fim para sair do while.
@@ -1405,9 +1522,12 @@ void loop()
                     case 4:
                         // Verifica se o botão verde foi pressionado.
                         if (x1 == 1)
-                            fim = 1; 
+                        {
+                            sequencia = 5; 
+                            delay(400);
+                        } 
                         // Errei o botão, seto a flag de erro e fim para sair do while.
-                        else if (x1 == 1 || x2 == 1)
+                        else if (x3 == 1 || x2 == 1)
                         {
                             erro = 1;
                             fim = 1; 
@@ -1417,7 +1537,10 @@ void loop()
                     case 5:
                         // Verifica se o botão amarelo foi pressionado.
                         if (x2 == 1)
-                            fim = 1; 
+                        {
+                            sequencia = 6; 
+                            delay(400);
+                        }
                         // Errei o botão, seto a flag de erro e fim para sair do while.
                         else if (x1 == 1 || x3 == 1)
                         {
@@ -1429,7 +1552,10 @@ void loop()
                     case 6: 
                         // Verifica se o botão vermelho foi pressionado.
                         if (x3 == 1)
-                            sequencia = 1; 
+                        {
+                            sequencia = 7; 
+                            delay(400);
+                        }
                         else if (x2 == 1 || x1 == 1)
                         {
                             // Errei o botão, seto a flag de erro e fim para sair do while.
@@ -1441,9 +1567,12 @@ void loop()
                     case 7:
                         // Verifica se o botão verde foi pressionado.
                         if (x1 == 1)
-                            fim = 1; 
+                        {
+                            sequencia = 8; 
+                            delay(400);
+                        } 
                         // Errei o botão, seto a flag de erro e fim para sair do while.
-                        else if (x1 == 1 || x2 == 1)
+                        else if (x3 == 1 || x2 == 1)
                         {
                             erro = 1;
                             fim = 1; 
@@ -1453,7 +1582,10 @@ void loop()
                     case 8:
                         // Verifica se o botão amarelo foi pressionado.
                         if (x2 == 1)
-                            fim = 1; 
+                        {
+                            sequencia = 9; 
+                            delay(400);
+                        } 
                         // Errei o botão, seto a flag de erro e fim para sair do while.
                         else if (x1 == 1 || x3 == 1)
                         {
@@ -1465,7 +1597,7 @@ void loop()
                     case 9: 
                         // Verifica se o botão vermelho foi pressionado.
                         if (x3 == 1)
-                            sequencia = 1; 
+                            fim = 1; 
                         else if (x2 == 1 || x1 == 1)
                         {
                             // Errei o botão, seto a flag de erro e fim para sair do while.
@@ -1483,7 +1615,7 @@ void loop()
             {
                 // Estado que venceu o jogo.
                 estado = 12;
-                delay(100); 
+                delay(400); 
             }
         break;
 
