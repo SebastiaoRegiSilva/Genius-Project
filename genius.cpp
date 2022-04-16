@@ -46,7 +46,7 @@ void loop()
                 if (x1 == 1 || x2 == 1 || x3 == 1)
                 {
                     estado = 1;
-                    delay(400); 
+                    delay(500); 
                     break;
                 }
             }
@@ -83,7 +83,7 @@ void loop()
             else
             {
                 estado = 2;
-                delay(400); 
+                delay(500); 
             }
             
         break;
@@ -132,7 +132,7 @@ void loop()
                         if (x3 == 1)
                         {
                             sequencia = 1; 
-                            delay(400);
+                            delay(500);
                         }
                         else if (x2 == 1 || x1 == 1)
                         {
@@ -162,7 +162,7 @@ void loop()
             else
             {
                 estado = 3;
-                delay(400); 
+                delay(500); 
             }
 
         break;
@@ -217,7 +217,7 @@ void loop()
                         if (x3 == 1)
                         {
                             sequencia = 1; 
-                            delay(400);
+                            delay(500);
                         }
                         else if (x2 == 1 || x1 == 1)
                         {
@@ -232,7 +232,7 @@ void loop()
                         if (x1 == 1)
                         {
                             sequencia = 2; 
-                            delay(400);
+                            delay(500);
                         }
                         // Errei o botão, seto a flag de erro e fim para sair do while.
                         else if (x3 == 1 || x2 == 1)
@@ -262,7 +262,7 @@ void loop()
             else
             {
                 estado = 4;
-                delay(400); 
+                delay(500); 
             }
 
         break;
@@ -327,7 +327,7 @@ void loop()
                         if (x3 == 1)
                         {
                             sequencia = 1; 
-                            delay(400);
+                            delay(500);
                         }
                         else if (x2 == 1 || x1 == 1)
                         {
@@ -342,7 +342,7 @@ void loop()
                         if (x1 == 1)
                         {
                             sequencia = 2; 
-                            delay(400);
+                            delay(500);
                         }
                         // Errei o botão, seto a flag de erro e fim para sair do while.
                         else if (x3 == 1 || x2 == 1)
@@ -357,7 +357,7 @@ void loop()
                         if (x2 == 1)
                         {
                             sequencia = 3; 
-                            delay(400);
+                            delay(500);
                         }
                         // Errei o botão, seto a flag de erro e fim para sair do while.
                         else if (x1 == 1 || x3 == 1)
@@ -387,7 +387,7 @@ void loop()
             else
             {
                 estado = 5;
-                delay(400); 
+                delay(500); 
             }
         break;
 
@@ -459,7 +459,7 @@ void loop()
                         if (x3 == 1)
                         {
                             sequencia = 1; 
-                            delay(400);
+                            delay(500);
                         }
                         else if (x2 == 1 || x1 == 1)
                         {
@@ -474,7 +474,7 @@ void loop()
                         if (x1 == 1)
                         {
                             sequencia = 2; 
-                            delay(400);
+                            delay(500);
                         }
                         // Errei o botão, seto a flag de erro e fim para sair do while.
                         else if (x3 == 1 || x2 == 1)
@@ -489,7 +489,7 @@ void loop()
                         if (x2 == 1)
                         {
                             sequencia = 3; 
-                            delay(400);
+                            delay(500);
                         }
                         // Errei o botão, seto a flag de erro e fim para sair do while.
                         else if (x1 == 1 || x3 == 1)
@@ -504,7 +504,7 @@ void loop()
                         if (x3 == 1)
                         {
                             sequencia = 4; 
-                            delay(400);
+                            delay(500);
                         } 
                         else if (x2 == 1 || x1 == 1)
                         {
@@ -534,7 +534,7 @@ void loop()
             else
             {
                 estado = 6;
-                delay(400); 
+                delay(500); 
             }
         break;
 
@@ -614,7 +614,7 @@ void loop()
                         if (x3 == 1)
                         {
                             sequencia = 1; 
-                            delay(400);
+                            delay(500);
                         } 
                         else if (x2 == 1 || x1 == 1)
                         {
@@ -629,7 +629,7 @@ void loop()
                         if (x1 == 1)
                         {
                             sequencia = 2; 
-                            delay(400);
+                            delay(500);
                         } 
                         // Errei o botão, seto a flag de erro e fim para sair do while.
                         else if (x3 == 1 || x2 == 1)
@@ -644,7 +644,7 @@ void loop()
                         if (x2 == 1)
                         {
                             sequencia = 3; 
-                            delay(400);
+                            delay(500);
                         } 
                         // Errei o botão, seto a flag de erro e fim para sair do while.
                         else if (x1 == 1 || x3 == 1)
@@ -659,7 +659,7 @@ void loop()
                         if (x3 == 1)
                         {
                             sequencia = 4; 
-                            delay(400);
+                            delay(500);
                         } 
                         else if (x2 == 1 || x1 == 1)
                         {
@@ -674,7 +674,7 @@ void loop()
                         if (x1 == 1)
                         {
                             sequencia = 5; 
-                            delay(400);
+                            delay(500);
                         } 
                         // Errei o botão, seto a flag de erro e fim para sair do while.
                         else if (x3 == 1 || x2 == 1)
@@ -704,7 +704,7 @@ void loop()
             else
             {
                 estado = 7;
-                delay(400); 
+                delay(500); 
             }
         break;
 
@@ -792,7 +792,7 @@ void loop()
                         if (x3 == 1)
                         {
                             sequencia = 1; 
-                            delay(400);
+                            delay(500);
                         } 
                         else if (x2 == 1 || x1 == 1)
                         {
@@ -807,7 +807,7 @@ void loop()
                         if (x1 == 1)
                         {
                             sequencia = 2; 
-                            delay(400);
+                            delay(500);
                         } 
                         // Errei o botão, seto a flag de erro e fim para sair do while.
                         else if (x3 == 1 || x2 == 1)
@@ -822,7 +822,7 @@ void loop()
                         if (x2 == 1)
                         {
                             sequencia = 3; 
-                            delay(400);
+                            delay(500);
                         } 
                         // Errei o botão, seto a flag de erro e fim para sair do while.
                         else if (x1 == 1 || x3 == 1)
@@ -837,7 +837,7 @@ void loop()
                         if (x3 == 1)
                         {
                             sequencia = 4; 
-                            delay(400);
+                            delay(500);
                         } 
                         else if (x2 == 1 || x1 == 1)
                         {
@@ -852,7 +852,7 @@ void loop()
                         if (x1 == 1)
                         {
                             sequencia = 5; 
-                            delay(400);
+                            delay(500);
                         } 
                         // Errei o botão, seto a flag de erro e fim para sair do while.
                         else if (x3 == 1 || x2 == 1)
@@ -867,7 +867,7 @@ void loop()
                         if (x2 == 1)
                         {
                             sequencia = 6; 
-                            delay(400);
+                            delay(500);
                         } 
                         // Errei o botão, seto a flag de erro e fim para sair do while.
                         else if (x1 == 1 || x3 == 1)
@@ -897,7 +897,7 @@ void loop()
             else
             {
                 estado = 8;
-                delay(400); 
+                delay(500); 
             }
         break;
 
@@ -993,7 +993,7 @@ void loop()
                         if (x3 == 1)
                         {
                             sequencia = 1; 
-                            delay(400);
+                            delay(500);
                         }
                         else if (x2 == 1 || x1 == 1)
                         {
@@ -1008,7 +1008,7 @@ void loop()
                         if (x1 == 1)
                         {
                             sequencia = 2; 
-                            delay(400);
+                            delay(500);
                         }
                         // Errei o botão, seto a flag de erro e fim para sair do while.
                         else if (x3 == 1 || x2 == 1)
@@ -1023,7 +1023,7 @@ void loop()
                         if (x2 == 1)
                         {
                             sequencia = 3; 
-                            delay(400);
+                            delay(500);
                         } 
                         // Errei o botão, seto a flag de erro e fim para sair do while.
                         else if (x1 == 1 || x3 == 1)
@@ -1038,7 +1038,7 @@ void loop()
                         if (x3 == 1)
                         {
                             sequencia = 4; 
-                            delay(400);
+                            delay(500);
                         } 
                         else if (x2 == 1 || x1 == 1)
                         {
@@ -1053,7 +1053,7 @@ void loop()
                         if (x1 == 1)
                         {
                             sequencia = 5; 
-                            delay(400);
+                            delay(500);
                         }
                         // Errei o botão, seto a flag de erro e fim para sair do while.
                         else if (x3 == 1 || x2 == 1)
@@ -1068,7 +1068,7 @@ void loop()
                         if (x2 == 1)
                         {
                             sequencia = 6; 
-                            delay(400);
+                            delay(500);
                         } 
                         // Errei o botão, seto a flag de erro e fim para sair do while.
                         else if (x1 == 1 || x3 == 1)
@@ -1083,7 +1083,7 @@ void loop()
                         if (x3 == 1)
                         {
                             sequencia = 7; 
-                            delay(400);
+                            delay(500);
                         } 
                         else if (x2 == 1 || x1 == 1)
                         {
@@ -1113,7 +1113,7 @@ void loop()
             else
             {
                 estado = 9;
-                delay(400); 
+                delay(500); 
             }
         break;
 
@@ -1217,7 +1217,7 @@ void loop()
                         if (x3 == 1)
                         {
                             sequencia = 1; 
-                            delay(400);
+                            delay(500);
                         } 
                         else if (x2 == 1 || x1 == 1)
                         {
@@ -1232,7 +1232,7 @@ void loop()
                         if (x1 == 1)
                         {
                             sequencia = 2; 
-                            delay(400);
+                            delay(500);
                         }
                         // Errei o botão, seto a flag de erro e fim para sair do while.
                         else if (x3 == 1 || x2 == 1)
@@ -1247,7 +1247,7 @@ void loop()
                         if (x2 == 1)
                         {
                             sequencia = 3; 
-                            delay(400);
+                            delay(500);
                         } 
                         // Errei o botão, seto a flag de erro e fim para sair do while.
                         else if (x1 == 1 || x3 == 1)
@@ -1262,7 +1262,7 @@ void loop()
                         if (x3 == 1)
                         {
                             sequencia = 4; 
-                            delay(400);
+                            delay(500);
                         } 
                         else if (x2 == 1 || x1 == 1)
                         {
@@ -1277,7 +1277,7 @@ void loop()
                         if (x1 == 1)
                         {
                             sequencia = 5; 
-                            delay(400);
+                            delay(500);
                         } 
                         // Errei o botão, seto a flag de erro e fim para sair do while.
                         else if (x3 == 1 || x2 == 1)
@@ -1292,7 +1292,7 @@ void loop()
                         if (x2 == 1)
                         {
                             sequencia = 6; 
-                            delay(400);
+                            delay(500);
                         } 
                         // Errei o botão, seto a flag de erro e fim para sair do while.
                         else if (x1 == 1 || x3 == 1)
@@ -1307,7 +1307,7 @@ void loop()
                         if (x3 == 1)
                         {
                             sequencia = 7; 
-                            delay(400);
+                            delay(500);
                         } 
                         else if (x2 == 1 || x1 == 1)
                         {
@@ -1322,7 +1322,7 @@ void loop()
                         if (x1 == 1)
                         {
                             sequencia = 8; 
-                            delay(400);
+                            delay(500);
                         } 
                         // Errei o botão, seto a flag de erro e fim para sair do while.
                         else if (x3 == 1 || x2 == 1)
@@ -1352,7 +1352,7 @@ void loop()
             else
             {
                 estado = 10;
-                delay(400); 
+                delay(500); 
             }
         break;
 
@@ -1464,7 +1464,7 @@ void loop()
                         if (x3 == 1)
                         {
                             sequencia = 1; 
-                            delay(400);
+                            delay(500);
                         } 
                         else if (x2 == 1 || x1 == 1)
                         {
@@ -1479,7 +1479,7 @@ void loop()
                         if (x1 == 1)
                         {
                             sequencia = 2; 
-                            delay(400);
+                            delay(500);
                         } 
                         // Errei o botão, seto a flag de erro e fim para sair do while.
                         else if (x3 == 1 || x2 == 1)
@@ -1494,7 +1494,7 @@ void loop()
                         if (x2 == 1)
                         {
                             sequencia = 3; 
-                            delay(400);
+                            delay(500);
                         }
                         // Errei o botão, seto a flag de erro e fim para sair do while.
                         else if (x1 == 1 || x3 == 1)
@@ -1509,7 +1509,7 @@ void loop()
                         if (x3 == 1)
                         {
                             sequencia = 4; 
-                            delay(400);
+                            delay(500);
                         } 
                         else if (x2 == 1 || x1 == 1)
                         {
@@ -1524,7 +1524,7 @@ void loop()
                         if (x1 == 1)
                         {
                             sequencia = 5; 
-                            delay(400);
+                            delay(500);
                         } 
                         // Errei o botão, seto a flag de erro e fim para sair do while.
                         else if (x3 == 1 || x2 == 1)
@@ -1539,7 +1539,7 @@ void loop()
                         if (x2 == 1)
                         {
                             sequencia = 6; 
-                            delay(400);
+                            delay(500);
                         }
                         // Errei o botão, seto a flag de erro e fim para sair do while.
                         else if (x1 == 1 || x3 == 1)
@@ -1554,7 +1554,7 @@ void loop()
                         if (x3 == 1)
                         {
                             sequencia = 7; 
-                            delay(400);
+                            delay(500);
                         }
                         else if (x2 == 1 || x1 == 1)
                         {
@@ -1569,7 +1569,7 @@ void loop()
                         if (x1 == 1)
                         {
                             sequencia = 8; 
-                            delay(400);
+                            delay(500);
                         } 
                         // Errei o botão, seto a flag de erro e fim para sair do while.
                         else if (x3 == 1 || x2 == 1)
@@ -1584,7 +1584,7 @@ void loop()
                         if (x2 == 1)
                         {
                             sequencia = 9; 
-                            delay(400);
+                            delay(500);
                         } 
                         // Errei o botão, seto a flag de erro e fim para sair do while.
                         else if (x1 == 1 || x3 == 1)
@@ -1615,12 +1615,22 @@ void loop()
             {
                 // Estado que venceu o jogo.
                 estado = 12;
-                delay(400); 
+                delay(500); 
             }
         break;
 
         // Bloco de erro no processar das fases.
         case 11:
+            digitalWrite(pin5, LOW); 
+            digitalWrite(pin4, LOW); 
+            digitalWrite(pin3, HIGH); // LED Vermelho.
+            delay(500);
+            digitalWrite(pin5, LOW);
+            digitalWrite(pin4, LOW);
+            digitalWrite(pin3, LOW);
+        
+        
+        
         break;
 
         // Bloco quem venceu o jogo.
