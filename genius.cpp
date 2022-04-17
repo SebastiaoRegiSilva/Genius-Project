@@ -1,3 +1,5 @@
+// Atvidade realizada pelo BRUNO e Sebastião Willian
+
 #define pin2 2
 #define pin3 3
 #define pin4 4
@@ -1619,22 +1621,46 @@ void loop()
             }
         break;
 
-        // Bloco de erro no processar das fases.
+        // Bloco de erro no processar das fases. O LED Vermelho deve piscar 3 vezes.
         case 11:
-            digitalWrite(pin5, LOW); 
-            digitalWrite(pin4, LOW); 
-            digitalWrite(pin3, HIGH); // LED Vermelho.
-            delay(500);
-            digitalWrite(pin5, LOW);
-            digitalWrite(pin4, LOW);
-            digitalWrite(pin3, LOW);
+            // Laço de repetição para piscar o LED Vermelho 3 VEZES.
+            for(int i = 0; i <= 2; i++)
+            {
+                // Soar o Buzzer.
+              	digitalWrite(pin2, HIGH); // Buzzer.
+                digitalWrite(pin5, LOW);
+                digitalWrite(pin4, LOW); 
+                digitalWrite(pin3, HIGH); // LED Vermelho.
+                delay(300);
+                digitalWrite(pin2, LOW);
+                digitalWrite(pin5, LOW);
+                digitalWrite(pin4, LOW);
+                digitalWrite(pin3, LOW);
+                delay(300);
+            }
         
-        
-        
+            // Retornar ao CASE 0 que é o início do jogo
+            estado = 0;
         break;
 
         // Bloco quem venceu o jogo.
         case 12:
+            // Laço de repetição para piscar o LED Verde 3 VEZES, indicando que venceu o jogo.
+            for(int i = 0; i <= 2; i++)
+            {
+                digitalWrite(pin5, HIGH); // LED Verde. 
+                digitalWrite(pin4, LOW); 
+                digitalWrite(pin3, LOW);
+                delay(300);
+                digitalWrite(pin5, LOW);
+                digitalWrite(pin4, LOW);
+                digitalWrite(pin3, LOW);
+                delay(300);
+            }
+        
+            // Retornar ao CASE 0 que é o início do jogo.
+            estado = 0;
+        
         break;    
     }
 }
